@@ -17,8 +17,6 @@
     │   └── secrets.yaml
     ├── .env
     ├── .gitignore
-    ├── docker-compose.yaml
-    ├── Jenkinsfile
     ├── LICENSE
     └── README.md
 ```
