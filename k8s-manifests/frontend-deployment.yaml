@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-deployment
+  namespace: k8s-chatapp
+spec:
+  replicas: 1 
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+        name: frontend-pod
+        namespace: k8s-chatapp 
+    spec:
+      containers:
+        - name: frontend-chatapp
+          image: swapnilmali101/chatapp-frontend:latest
+          ports:
+            - containerPort: 80 
+          env:
+            - name: NODE_ENV
+              value: "production"
