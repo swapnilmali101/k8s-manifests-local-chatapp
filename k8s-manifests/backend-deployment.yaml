@@ -22,7 +22,7 @@ spec:
             - containerPort: 5001
           env:
             - name: MONGODB_URI
-              value: "mongodb://swapnil:smtuv87@mongodb-service:27017/chatapp?authSource=admin"
+              value: "mongodb://swapnil:swapnil123@mongodb:27017/chatapp?authSource=admin"
             - name: JWT_SECRET
               valueFrom:
                 secretKeyRef:
