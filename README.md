@@ -36,14 +36,14 @@ All resources are scoped to the `k8s-chatapp` namespace.
 
 ```
                         ┌─────────────────────────────────────────┐
-                        │           k8s-chatapp Namespace          │
-                        │                                          │
+                        │           k8s-chatapp Namespace         │
+                        │                                         │
   Browser ──► Ingress ──►  Frontend Pod  ──►  Backend Pod         │
-                        │                        │                 │
-                        │               MongoDB Service            │
-                        │                    │                     │
-                        │              MongoDB Pod                 │
-                        │            (PV + PVC mounted)            │
+                        │                        │                │
+                        │               MongoDB Service           │
+                        │                    │                    │
+                        │               MongoDB Pod               │
+                        │            (PV + PVC mounted)           │
                         └─────────────────────────────────────────┘
 ```
 
@@ -197,7 +197,7 @@ Forward traffic from the NGINX Ingress Controller to your local machine:
 kubectl port-forward svc/ingress-nginx-controller -n ingress-nginx 80:80
 ```
 
-Then open your browser at: <http://localhost>
+Then open your browser at: <http://localhost:80>
 
 ### Direct Backend Port-Forward (for debugging)
 
