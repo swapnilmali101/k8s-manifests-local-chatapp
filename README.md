@@ -222,6 +222,10 @@ kubectl get ns
 
 -----
 
-## License
+## 📄 License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is open source and available under the [MIT License](LICENSE).
+
+-----
+
+> Made with ❤️ by [swapnilmali101](https://github.com/swapnilmali101) — Happy ☸️Kube-cuttling! 🌍
